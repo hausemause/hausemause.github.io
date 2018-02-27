@@ -1962,3 +1962,16 @@ body.showOverlay .toggleOverlay {
   right: 30%;
   left: 30%;
   width: 40%; }
+
+#abackground {
+    width: 201%; 
+    height: 200%;  
+    left: -250px; 
+    top: 0px; 
+    z-index: 0; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+.stretch {
+    width:220%;
+    height:200%;
+}
