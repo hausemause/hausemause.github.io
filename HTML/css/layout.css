@@ -5,8 +5,6 @@
 /* eg: @include border-radius(3px); */
 /* eg: @include visibility-backface(hidden); */
 /*------------------------------------------------------------------
-  	[The "base.scss" contains basic default element styles
-  		(colors, typography, margins & padding).]
 ------------------------------------------------------------------*/
 html {
   overflow-x: hidden;
@@ -1963,15 +1961,8 @@ body.showOverlay .toggleOverlay {
   left: 30%;
   width: 40%; }
 
-#abackground {
-    width: 201%; 
-    height: 200%;  
-    left: -250px; 
-    top: 0px; 
-    z-index: 0; /* Ensure div tag stays behind content; -999 might work, too. */
-}
+/* Remove margins from the 'html' and 'body' tags, and ensure the page takes up full screen height. */
+            html, body {height:100%; margin:0; padding:0;}
 
-.stretch {
-    width:220%;
-    height:200%;
-}
+            /* Set the position and dimensions of the background image. */
+            #page-background {top:0; left:-250px; width:201%; height:200%;}
